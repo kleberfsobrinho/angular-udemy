@@ -80,3 +80,30 @@ class Student {
 
 const student = new Student('Kleber', 'Sobrinho', 20, ['Angular']);
 student.enrol('TypeScript');
+
+// Interface
+
+interface Human {
+    firstName: string;
+    age: number;
+
+    greet: () => void;
+}
+
+let kleber: Human;
+
+kleber = {
+    firstName: 'Kleber',
+    age: 20,
+    greet() {
+        console.log('Hello')
+    }
+}
+
+class Instructor implements Human {
+    firstName: string;
+    age: number;
+    greet() {
+        console.log('Hello');
+    };
+}
