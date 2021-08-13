@@ -55,3 +55,28 @@ const updatedArray = insertAtBeginning(demoArray, -1); // [-1, 1, 2, 3]
 const stringArray = insertAtBeginning(['a', 'b', 'c'], 'd');
 
 // updatedArray[0].split('');
+
+class Student {
+    firstName: string;
+    lastName: string;
+    age: number;
+    private courses: string[];
+
+    constructor(firstName: string, lastName: string, age: number, courses: string[]) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.courses = courses;
+    }
+
+    enrol(courseName: string) {
+        this.courses.push(courseName);
+    }
+
+    listCourse() {
+        return this.courses.slice();
+    }
+}
+
+const student = new Student('Kleber', 'Sobrinho', 20, ['Angular']);
+student.enrol('TypeScript');
