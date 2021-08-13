@@ -31,3 +31,13 @@ let people: {
 let course: string | number = "React - The Complete Guide";
 
 course = 12341
+
+// Functions & types
+
+function add(a:number, b:number)/* :number */ {
+    return a + b;
+}
+
+function printValue(value: any) {
+    console.log(value);
+}
