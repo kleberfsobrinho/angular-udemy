@@ -14,12 +14,20 @@ let hobbies: string[];
 
 let tasks: any;
 
-let person: {
+type Person = {
     name: string;
     age: number;
 };
+
+let person: Person;
 
 let people: {
     name: string;
     age: number;
 }[]; // array of objects
+
+// Type inference - Union types
+
+let course: string | number = "React - The Complete Guide";
+
+course = 12341
