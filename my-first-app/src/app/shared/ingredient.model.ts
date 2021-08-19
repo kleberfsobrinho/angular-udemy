@@ -1,5 +1,3 @@
-import { ThrowStmt } from "@angular/compiler";
-
 export class Ingredient {
     public name: string;
     public amount: number;
